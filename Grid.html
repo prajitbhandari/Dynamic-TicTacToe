@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<style type="text/css">
+		.game-buttons li {
+			list-style: none;
+			display: inline-block;
+			margin-right:2px;
+			position: relative;
+			left:40%;
+			height: 20px;
+			width: 100px;
+		}
+
+	</style>
+	<script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+	<div class="wrapper" style="margin: 0 auto;">
+		<h3 style="text-align: center;padding-top:50px;">Welcome to Tic Tac Toe Game</h3>
+		<h4 style="text-align: center;">Would you like to be X or 0?</h4>
+
+		<form name="input-form" method="POST" action="" style="text-align: center;" 
+			id="input-form">
+			Choose the size of your grid <input type="text"  name="grid-size" 
+			id="myInput" value=""><br><br>
+			<!-- <input type="button" id ="btn-submit" onclick="return validateForm()" value="submit"> -->
+			<button id ="btn-submit" value="submit">Submit</button>
+		</form>	
+		<p id="result" style="text-align: center;"> </p>
+		<div class="game-display">
+			<p id="player-info" align="center"></p>
+			<p id="player-turn" align="center"></p>
+			<p id="game-result" style="text-align: center;"></p>
+			<button id="game-reset" style="visibility: hidden;position:relative;left:48%;" 
+			value="Refresh Page">Reset</button><br><br>
+			<table id="grid-table" border="1px" align="center" cellspacing="0px" cellpadding="20px">	
+			</table>	
+		</div>
+	</div>	
+
+</body>
+</html>
