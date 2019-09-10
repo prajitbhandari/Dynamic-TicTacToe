@@ -228,7 +228,7 @@
     function checkColumn(board,num){
         let xcount=1;
         let ycount=1;
-        for(let i=0;i<num-1;i++){	
+        for(let i=0;i<num;i++){	
             for(let j=0;j<num-1;j++){
                 if((board[j][i]=="X" && board[j+1][i]=="X")){    
                     xcount=xcount+1;
